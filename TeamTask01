@@ -1,0 +1,44 @@
+package kokonut;
+
+import java.awt.FlowLayout;
+
+import javax.swing.*;
+
+public class TestFrameExample {
+
+	public static void main(String s[]) {
+
+		JFrame frame = new JFrame("JFrame Example");
+
+		JPanel panel = new JPanel();
+		panel.setLayout(new FlowLayout());
+
+		JLabel label = new JLabel("Chceš cigaňov v autobuse?");
+
+		JButton button = new JButton();
+		button.setText("Ano");
+		JButton button2 = new JButton();
+		button2.setText("Nie");
+
+		panel.add(label);
+		panel.add(button);
+		panel.add(button2);
+		
+
+		frame.add(panel);
+		frame.setSize(300, 300);
+		frame.setLocationRelativeTo(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+
+	}
+
+}
+
+_____________________________________________________________________
++ Login Register
+https://docs.oracle.com/javase/tutorial/uiswing/components/button.html
+
+
+
+
